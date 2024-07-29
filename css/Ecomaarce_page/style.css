@@ -7,11 +7,24 @@ body {
 
 header {
     background-color: #291d1d;
-    color: rgb(255, 238, 7);
-    padding: 15px 0;
+    color: hwb(0 0% 0%);
+    padding: 3px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: top 0.3s;
+    z-index: 1000;
+   
+}
+.logo{
+    margin-right: auto;
+}
+.logo img{
+    height: 100px; /* Adjust the height as needed */
+    width: auto;
+}
+main {
+    padding-top: 80px; /* Adjust to avoid content being hidden behind the navbar */
 }
 
 .header-content {
@@ -24,6 +37,7 @@ header {
 }
 
 .header-content h1 {
+   font-size:165%;
     margin: 0;
     flex-grow: 1; /* Ensures the title takes the available space */
 }
@@ -40,7 +54,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(246, 246, 1);
+    color: rgb(9, 1, 246);
     text-decoration: none;
     padding: 5px 10px;
     transition: color 0.3s ease;
